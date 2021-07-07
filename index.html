@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Le Pendu</title>
+</head>
+
+<body>
+
+    <h1>Le Pendu Like Pig</h1>
+    <p>Find the Mot - une lettre à la fois ! </p>
+
+    <div class="jeu-contenaire">
+
+        <svg height="250" width="200" class="figure-contenaire">
+
+
+            <!-- le raque du pendu  -->
+            <line x1="0" y1="240" x2="50" y2="240" class="corps"/>
+            <line x1="20" y1="240" x2="20" y2="20" class="corps"/>
+            <line x1="20" y1="20" x2="140" y2="20" class="corps"/>
+            <line x1="140" y1="20" x2="140" y2="50" class="corps"/>
+
+
+            <!-- le bonhomme  -->
+
+            <!-- P 1 : la tête  -->
+
+            <circle cx="140" cy="70" r="20" class="corps" />
+
+            <!-- P 2 : corps  et bras -->
+
+            <line x1="140" y1="160" x2="140" y2="90" class="corps" />
+            <line x1="100" y1="140" x2="140" y2="90" class="corps" />
+            <line x1="180" y1="140" x2="140" y2="90" class="corps" />
+
+            <!-- P3 : Jambes -->
+
+            <line x1="140" y1="160" x2="120" y2="200" class="corps" />
+            <line x1="140" y1="160" x2="160" y2="200" class="corps" />
+
+
+
+        </svg>
+
+
+        <div class="lettre-container">
+
+            <p> Worst lettres</p>
+
+            <div id="mauvaises-lettres"></div>
+
+        </div>
+
+        <div class="mot" id="mot"></div>
+
+
+
+    </div>
+
+
+    <!-- Message Final  -->
+
+
+    <div class="popup-contenaire" id="popup-container">
+
+        <div class="popup">
+            <h2 id="message-final">Bravo tu à Gagné ! </h2>
+
+            <button id="play-bouton">Rejouer !</button>
+        </div>
+
+    </div>
+
+    <!-- Notification de lettre deja joué -->
+
+    <div class="notification-contenaire" id="notification-contenaire">
+
+        <p>Tu a déjà joué cette lettre</p>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

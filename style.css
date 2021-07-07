@@ -1,0 +1,139 @@
+/*   font-family: 'Titan One', cursive;
+    font-family: 'Sedgwick Ave', cursive; */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: brown;
+    color: white;
+    font-family: 'Sedgwick Ave', cursive;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px 0 0;
+    font-size: 50px;
+    font-family: 'Titan One', cursive;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.jeu-contenaire {
+    padding: 20px 30px;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+    position: relative;
+}
+
+
+/* stroke permet de remplir une forme SVG */
+
+.figure-contenaire {
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    fill: transparent;
+}
+
+.corps {
+    display: none;
+}
+
+.lettre-container {
+    position: absolute;
+    /* top: 20px; */
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.lettre-container p {
+    margin: 0 0 5px;
+}
+
+.lettre-container span {
+    font-size: 24px;
+    font-family: 'roboto', cursive;
+}
+
+.mot {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lettre {
+    border-bottom: 2px solid grey;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+    font-family: 'roboto', cursive
+}
+
+.popup-contenaire {
+    background-color: rgba(78, 75, 75, 0.753);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background-color: rgba(88, 172, 221, 0.719);
+    border-radius: 5px;
+    box-shadow: 0 12px 10px 5px rgba(0, 0, 0, 0.376);
+    padding: 10px;
+    text-align: center;
+}
+
+.popup button {
+    cursor: pointer;
+    background-color: rgba(36, 35, 32, 0.63);
+    color: blanchedalmond;
+    border: 0;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.popup button:active {
+    transform: scale(0.98);
+}
+
+.popup button:focus {
+    outline: 0;
+}
+
+.notification-contenaire {
+    background-color: rgba(52, 133, 180, 0.63);
+    border-radius: 10px 0 10px 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -90px;
+    transition: transform 0.3 ease-in-out;
+}
+
+.notification-contenaire.afficher {
+    transform: translateY(-80px);
+}
