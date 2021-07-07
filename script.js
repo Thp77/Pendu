@@ -9,7 +9,7 @@ const figurePartie = document.querySelectorAll(".corps");
 
 
 const mots = ["visages", "tornade", "rubrique", "voitures",
-    "enveloppe", "internet", "attitude", "flottant", "baignoire", "paiement"
+    "enveloppe", "internet", "attitude", "flottant", "baignoire", "paiement", "anticonstitutionnellement"
 ];
 
 // selectionner un mot pour jouer // 
